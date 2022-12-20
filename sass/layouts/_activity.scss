@@ -1,0 +1,37 @@
+/* activity */
+.activity {
+  padding-top: 0;
+}
+.activity__box {
+  display: flex;
+  flex-direction: column;
+}
+.set-list {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+.set-list__item {
+  display: flex;
+  margin-right: 30px;
+  position: relative;
+  &:nth-child(3) {
+      margin-right: 0;
+    }
+}
+.set-list__img.picture {
+  margin-bottom: 0;
+}
+.set-list__title {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--background-page-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}

@@ -1,0 +1,138 @@
+/* futter */
+.footer {
+  background-color: var(--background-bottom-color);
+}
+.footer__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 64px;
+  padding-bottom: 62px;
+}
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  min-width: 231px;
+  margin-right: 70px;
+}
+.address__text {
+  color: var(--background-page-color);
+  margin-bottom: 9px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:hover {
+      color: var(--accent-text-color);
+  }
+}
+.address__list {
+  margin: 0;
+}
+.address__item {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.address__email {
+  color: var(--bottom-text-color);
+  margin-bottom: 9px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}
+.address__tel {
+  color: var(--bottom-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:hover {
+    color: var(--accent-text-color);
+  }
+}
+.box-join {
+  display: flex;
+  flex-direction: column;
+  margin-right: 93px;
+}
+.box-join__title {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  padding: 0;
+  text-transform: uppercase;
+  color: var(--background-page-color);
+}
+.box-join__soc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 0;
+  padding: 0;
+}
+.box-join__items {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 44px;
+  height: 44px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.box-join__link {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--background-page-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+    fill: var(--background-page-color);
+  }
+}
+.box-subscription {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+  justify-content: flex-end;
+}
+.box-subscription__join {
+  @extend .box-join__title;
+  margin-bottom: 20px;
+}
+.box-subscription__connect {
+  @include flex-row();
+  }
+.box-subscription__input {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  min-width: 358px;
+  padding-left: 16px;
+  margin-right: 12px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: rgba(255, 255, 255, 0.6);
+  &:focus,
+  &:hover {
+    border-color: var(--accent-text-color);
+  }
+}
+.form-action__send {
+  display: flex;
+  position: relative;
+  margin: 0 0 0 10px;
+}

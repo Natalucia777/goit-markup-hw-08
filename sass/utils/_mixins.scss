@@ -1,0 +1,46 @@
+@mixin font($fw, $fs, $lh, $ls) {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: $fw;
+  font-size: $fs + px;
+  line-height: $lh;
+  letter-spacing: $ls + em;
+  text-decoration: none;
+}
+
+@mixin font-logo($fw, $fs, $lh, $ls) {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: $fw;
+  font-size: $fs + px;
+  line-height: $lh;
+  letter-spacing: $ls + em;
+  text-decoration: none;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  width: 100%;
+}
+
+@mixin btn {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  justify-content: center;
+  background-color: var(--accent-text-color);
+  color: var(--background-page-color);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--button-form-color);
+  }
+}

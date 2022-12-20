@@ -1,0 +1,86 @@
+:root {
+  --primmary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --background-page-color: #ffffff;
+  --background-hero-color: #c4c4c4;
+  --team-action-color: #f5f4fa;
+  --background-bottom-color: #2f303a;
+  --logo-top-color: #000000;
+  --bottom-text-color: rgba(255, 255, 255, 0.6);
+  --card-portfolio-color: #eeeeee;
+  --soc-icons-color: #afb1b8;
+  --button-form-color: #188ce8;
+}
+
+.page {
+  @include font(400, 14, 1.71, 0.03);
+}
+.logo {
+  @include font-logo(700, 26, 1.2, 0.03);
+}
+.section-title {
+  @include font(700, 36, 1.17, 0.03);
+}
+.navigation__list,
+.navigation__item {
+  @include font(500, 14, 16px, 0.02);
+}
+.hero__title {
+  @include font(900, 44, 1.36, 0.06);
+}
+.button-action {
+  @include font(700, 16, 1.88, 0.06);
+}
+.form-title {
+  @include font(700, 20, 23px, 0.03);
+}
+.form-label,
+.form-field textarea::placeholder {
+  @include font(400, 12, 14px, 0.01);
+}
+.label-policy {
+  @include font(400, 14, null, 0.03);
+}
+.button-form,
+.form-action__button {
+  @include font(700, 16, 30px, 0.06);
+}
+%font-type {
+  @include font(500, 14, 1.4, 0.02);
+}
+.set-list__title,
+.information-box__sub-title {
+  @include font(700, 14, 16px, 0.03);
+}
+.set-img__title {
+  @include font(500, 16, 1.19, 0.03);
+}
+.team {
+  & .text {
+    @include font(400, 16, 1.19, 0.03);
+  }
+}
+.text,
+.address__text {
+  @include font(400, 14, 1.71, 0.03);
+}
+.address__email,
+.address__tel {
+  @include font(400, 14, 24px, 0.03);
+}
+.box-join__title {
+  @include font(700, 14, 16px, 0.03);
+}
+.nav-list__btn {
+  @include font(500, 16, 1.63, 0.03);
+}
+.card-set__text {
+  @include font(400, 18, 28px, 0.03);
+}
+.card-set__title {
+  @include font(400, 18, 36px, 0.06);
+}
+.card-set__type {
+  @include font(400, 16, 1.88, 0.03);
+}

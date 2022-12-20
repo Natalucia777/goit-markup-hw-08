@@ -1,0 +1,25 @@
+/* logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo--blue {
+  display: flex;
+  align-items: center;
+  color: var(--accent-text-color);
+}
+
+.logo--top {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
+  color: var(--logo-top-color);
+}
+
+.logo--bottom {
+  color: var(--background-page-color);
+  margin-bottom: 20px;
+}
