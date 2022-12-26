@@ -298,7 +298,7 @@ img {
 
 .container {
   display: flex;
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   align-items: center;
@@ -751,19 +751,12 @@ button .button-action {
 
 /* benefits */
 .information-box {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
 }
 
 .information-box__item {
-  display: flex;
-  flex-direction: column;
-  margin: 0 30px 0 0;
   padding: 0;
 }
 .information-box__item:nth-child(4) {
