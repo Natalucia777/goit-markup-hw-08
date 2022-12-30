@@ -26,9 +26,16 @@
 .navigation__item {
   @include font(500, 14, 16px, 0.02);
 }
+
+
 .hero__title {
-  @include font(900, 44, 1.36, 0.06);
+  @include font(900, 26, 1.61, 0.06);
+  @media screen and (min-width: 1200px) {
+    @include font(900, 44, 1.36, 0.06);
+  }
 }
+
+
 .button-action {
   @include font(700, 16, 1.88, 0.06);
 }
