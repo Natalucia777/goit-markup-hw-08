@@ -16,8 +16,12 @@
 .page {
   @include font(400, 14, 1.71, 0.03);
 }
+
 .logo {
-  @include font-logo(700, 26, 1.2, 0.03);
+  @include font-logo(700, 24, 1.17, 0.03);
+  @media screen and (min-width: 1200px) {
+      @include font-logo(700, 26, 1.2, 0.03);
+    }
 }
 
 
@@ -79,8 +83,6 @@
 }
 
 
-
-
 .text,
 .address__text {
   @include font(400, 14, 1.71, 0.03);
@@ -90,7 +92,7 @@
   @include font(400, 14, 24px, 0.03);
 }
 .box-join__title {
-  @include font(700, 14, 16px, 0.03);
+  @include font(700, 14, 1.17, 0.03);
 }
 .nav-list__btn {
   @include font(500, 16, 1.63, 0.03);

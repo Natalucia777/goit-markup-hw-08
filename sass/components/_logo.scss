@@ -22,4 +22,13 @@
 .logo--bottom {
   color: var(--background-page-color);
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      // padding-top: 64px;
+      // padding-bottom: 62px;
+    }
+  
 }
