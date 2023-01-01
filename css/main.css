@@ -852,10 +852,9 @@ button .button-action {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
-    width: 354px;
+    width: calc(100%/2 - 15px);
   }
   .information-box__item:nth-child(3) {
-    margin-right: 0;
     margin-bottom: 0;
   }
 }
@@ -864,10 +863,7 @@ button .button-action {
     display: flex;
     flex-direction: column;
     margin: 0 30px 0 0;
-    width: 100%;
-  }
-  .information-box__item:nth-child(3) {
-    margin-right: 30px;
+    width: calc(100%/4 - 15px);
   }
 }
 
@@ -886,13 +882,13 @@ button .button-action {
 }
 @media screen and (min-width: 768px) {
   .information-box__img {
-    width: 354px;
+    width: 100%;
     flex-basis: 120px;
   }
 }
 @media screen and (min-width: 1200px) {
   .information-box__img {
-    width: 270px;
+    width: 100%;
     flex-basis: 120px;
   }
 }
