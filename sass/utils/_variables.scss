@@ -19,9 +19,16 @@
 .logo {
   @include font-logo(700, 26, 1.2, 0.03);
 }
+
+
 .section-title {
-  @include font(700, 36, 1.17, 0.03);
+  @include font(700, 28, 1.18, 0.03);
+  @media screen and (min-width: 1200px) {
+      @include font(700, 36, 1.17, 0.03);
+    }
 }
+
+
 .navigation__list,
 .navigation__item {
   @include font(500, 14, 16px, 0.02);
@@ -60,6 +67,8 @@
 .information-box__sub-title {
   @include font(700, 14, 16px, 0.03);
 }
+
+
 .set-img__title {
   @include font(500, 16, 1.19, 0.03);
 }
@@ -68,6 +77,10 @@
     @include font(400, 16, 1.19, 0.03);
   }
 }
+
+
+
+
 .text,
 .address__text {
   @include font(400, 14, 1.71, 0.03);
