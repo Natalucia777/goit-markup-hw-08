@@ -921,17 +921,32 @@ button .button-action {
 
 /* activity */
 .activity {
-  padding-top: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
   opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
 }
 @media screen and (min-width: 1200px) {
   .activity {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    -webkit-clip-path: border-box;
+            clip-path: border-box;
+    clip: auto;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    padding-top: 0;
+    padding: 94px 0 94px 0;
   }
 }
 
