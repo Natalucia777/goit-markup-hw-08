@@ -13,10 +13,32 @@
 .logo--top {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-left: 15px;
   color: var(--logo-top-color);
+  @media screen and (min-width:768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+      display: flex;
+        align-items: center;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        margin-right: 93px;
+    
+        // flex-direction: row;
+      // justify-content: flex-start;
+      // align-items: flex-start;
+
+      // padding-top: 64px;
+      // padding-bottom: 62px;
+    }
+
+
+
 }
 
 .logo--bottom {
