@@ -60,12 +60,27 @@
         </div>
 
 
-
+<!-- 
         <button type="button" class="button-menu" >
           <svg width="24" height="16" class="button-menu__svg">
             <use href="./images/icons.svg#icon-menu_nav"></use>
           </svg>
-        </button>
+        </button> -->
+
+<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+  <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd"
+      d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+      clip-rule="evenodd"></path>
+  </svg>
+</button>
+<!-- 
+<ul class="menu">
+  <li><a href="" class="link">About</a></li>
+  <li><a href="" class="link">Products</a></li>
+  <li><a href="" class="link">Contacts</a></li>
+  <li><a href="" class="link">Career</a></li>
+</ul> -->
 
 
 
@@ -76,8 +91,7 @@
 
 
 
-
-      <div class="mobile-menu">
+      <!-- <div class="mobile-menu">
         <button type="button" class="mobile-menu__close" data-modal-close>
           <svg width="20" height="20" class="mobile-menu__svg">
             <use href="./images/icons.svg#icon-close"></use>
@@ -120,38 +134,38 @@
           <ul class="mobile-join__soc list">
             <li class="mobile-join__items">
               <a href="" class="mobile-join__link link">
-                Instagram
+                Instagram -->
                 <!-- <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg> -->
-              </a>
+              <!-- </a>
             </li>
             <li class="mobile-join__items">
               <a href="" class="mobile-join__link link">
-                Twitter
+                Twitter -->
                 <!-- <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg> -->
-              </a>
+              <!-- </a>
             </li>
             <li class="mobile-join__items">
               <a href="" class="mobile-join__link link">
-                Facebook
+                Facebook -->
                 <!-- <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg> -->
-              </a>
+              <!-- </a>
             </li>
             <li class="mobile-join__items">
               <a href="" class="mobile-join__link link">
-                LinkedIn
+                LinkedIn -->
                 <!-- <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg> -->
-              </a>
+              <!-- </a>
             </li>
           </ul>
-        </div>
+        </div> -->
 
       </div>
       </div>
@@ -618,6 +632,39 @@
         </form>
       </div>
     </div>
+
+
+
+
+
+
+<div class="menu-container  js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+    <svg  viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+      <path 
+        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+        clip-rule="evenodd"></path>
+    </svg>
+  </button>
+<div class="box-nav">
+  <ul class="mob-nav">
+    <li class="list"><a href="./index.html" class="mob-nav_link link">Студія</a></li>
+    <li class="list"><a href="./portfolio.html"  class="mob-nav_link link">Портфоліо</a></li>
+    <li class="list"><a  href="#" class="mob-nav_link link">Контакти</a></li>
+  </ul>
+  </div>
+</div>
+
+
+
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"></script>
+<script defer src="js/mobile-menu.js"></script>
+
+
+
     <script src="./js/modal.js"></script>
   </body>
 </html>

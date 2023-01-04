@@ -113,3 +113,7 @@
 .card-set__type {
   @include font(400, 16, 1.88, 0.03);
 }
+
+.mob-nav_link {
+  @include font(500, 40, 1.18, 0.02);
+}
