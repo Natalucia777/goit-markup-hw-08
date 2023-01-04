@@ -124,4 +124,7 @@
 .mob-nav_email {
   @include font(500, 24, 1.17, 0.02);
 }
+.box-join .mob-nav {
+  @include font(500, 18, 1.22, 0.02);
+}
 
