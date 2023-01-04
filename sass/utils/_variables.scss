@@ -16,23 +16,18 @@
 .page {
   @include font(400, 14, 1.71, 0.03);
 }
-
 .logo {
   @include font-logo(700, 24, 1.17, 0.03);
   @media screen and (min-width: 1200px) {
       @include font-logo(700, 26, 1.2, 0.03);
     }
 }
-
-
 .section-title {
   @include font(700, 28, 1.18, 0.03);
   @media screen and (min-width: 1200px) {
       @include font(700, 36, 1.17, 0.03);
     }
 }
-
-
 .navigation__list,
 .navigation__item {
   @include font(500, 14, 16px, 0.02);
@@ -57,15 +52,24 @@
 .button-action {
   @include font(700, 16, 1.88, 0.06);
 }
-.form-title {
-  @include font(700, 20, 23px, 0.03);
+.form__title {
+  @include font(700, 20, 30px, 0.03);
+    @media screen and (min-width: 1200px) {
+        @include font(700, 20, 23px, 0.03);
+      }
 }
-.form-label,
-.form-field textarea::placeholder {
+.form__label,
+.form__field textarea::placeholder {
   @include font(400, 12, 14px, 0.01);
 }
 .label-policy {
   @include font(400, 14, null, 0.03);
+}
+.polisy-acsept__label {
+  @include font(400, 12, 14px, 0.03);
+  @media screen and (min-width: 1200px) {
+      @include font(400, 14, 24px, 0.03);
+    }
 }
 .button-form,
 .form-action__button {

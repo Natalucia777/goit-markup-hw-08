@@ -130,17 +130,28 @@
   text-decoration: none;
 }
 
-.form-title {
+.form__title {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 30px;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
+@media screen and (min-width: 1200px) {
+  .form__title {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+  }
+}
 
-.form-field textarea::-moz-placeholder {
+.form__field textarea::-moz-placeholder {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -150,7 +161,7 @@
   text-decoration: none;
 }
 
-.form-field textarea:-ms-input-placeholder {
+.form__field textarea:-ms-input-placeholder {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -160,8 +171,8 @@
   text-decoration: none;
 }
 
-.form-label,
-.form-field textarea::placeholder {
+.form__label,
+.form__field textarea::placeholder {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -178,6 +189,27 @@
   font-size: 14px;
   letter-spacing: 0.03em;
   text-decoration: none;
+}
+
+.polisy-acsept__label {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+@media screen and (min-width: 1200px) {
+  .polisy-acsept__label {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+  }
 }
 
 .button-form,
@@ -522,8 +554,8 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   padding: 40px;
   background-color: var(--background-page-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -532,6 +564,12 @@ img {
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0) rotate(-90deg);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal__button {
@@ -555,6 +593,11 @@ img {
 }
 
 /* form */
+.form {
+  width: 100%;
+  height: 100%;
+}
+
 .form__title {
   display: flex;
   justify-content: center;
@@ -653,7 +696,6 @@ textarea {
 .polisy-acsept__label {
   display: flex;
   width: 100%;
-  margin-left: 0 0 0 12px;
   padding: 0;
   color: var(--primmary-text-color);
 }
@@ -676,7 +718,7 @@ textarea {
   height: 15px;
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
-  margin: 0 8px 0 12px;
+  margin: 0px 8px 0 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -686,6 +728,11 @@ textarea {
 .checked-checkbox svg {
   fill: transparent;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .checked-checkbox {
+    margin: 4px 8px 0 12px;
+  }
 }
 
 .polisy-acsept__input:checked + label > span {
@@ -1965,7 +2012,6 @@ button .button-action {
 }
 @media screen and (min-width: 768px) {
   .mobile-menu .link {
-    position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -1977,6 +2023,7 @@ button .button-action {
     clip: rect(0 0 0 0);
     overflow: hidden;
     opacity: 0;
+    position: absolute;
   }
 }
 
