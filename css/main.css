@@ -2128,7 +2128,7 @@ button .button-action {
   color: var(--accent-text-color);
 }
 
-.box-join {
+.box-join-mob {
   display: flex;
   flex-direction: row;
   padding: 0;
