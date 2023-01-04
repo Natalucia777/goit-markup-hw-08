@@ -12,7 +12,6 @@
   color: var(--title-text-color);
   padding: 0;
   margin: 0;
-  // max-width: 260px;
 }
 .form__name {
   margin: 12px 0 0 0;
@@ -86,7 +85,6 @@ textarea {
 .polisy-acsept__label {
   display: flex;
   width: 100%;
-  // margin: 0 0 0 12px;
   padding: 0;
   color: var(--primmary-text-color);
     & input {
@@ -101,7 +99,6 @@ textarea {
       border: 1px solid rgba(33, 33, 33, 0.2);
       border-radius: 4px;
     }
-        
 }
 .checked-checkbox {
   display: block;

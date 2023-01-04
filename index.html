@@ -19,7 +19,6 @@
   </head>
   <body class="page">
 
-
     <header class="header">
       <div class="container">
         <a href="#" lang="en" class="logo logo--top">
@@ -131,30 +130,24 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="set-list list">
             <li class="set-list__item">
-              <img
-                class="set-list__img picture"
-                src="./images/img-box-1.jpg"
-                alt="Людина працює над розробкою сайту"
-                width="370"
-              />
+              <picture>
+                <source srcset="./images/img-box-1.jpg 1x, ./images/img-box-1-2x.jpg 2x" type="image/jpeg" />
+                <img class="set-list__img picture" src="./images/img-box-1.jpg" alt="Людина працює над розробкою сайту" width="370" />
+              </picture>
               <h3 class="set-list__title">Десктопні додатки</h3>
             </li>
             <li class="set-list__item">
-              <img
-                class="set-list__img picture"
-                src="./images/img-box-2.jpg"
-                alt="Людина створює Web додаток"
-                width="370"
-              />
-              <h3 class="set-list__title">Мобільні додатки</h3>
+              <picture>
+                <source srcset="./images/img-box-2.jpg 1x, ./images/img-box-2-2x.jpg 2x" type="image/jpeg" />
+                <img class="set-list__img picture" src="./images/img-box-2.jpg" alt="Людина створює Web додаток" width="370" />
+              </picture>
+             <h3 class="set-list__title">Мобільні додатки</h3>
             </li>
             <li class="set-list__item">
-              <img
-                class="set-list__img picture"
-                src="./images/img-box-3.jpg"
-                alt="Людина працює над дизайном сайту"
-                width="370"
-              />
+              <picture>
+                <source srcset="./images/img-box-3.jpg 1x, ./images/img-box-3-2x.jpg 2x" type="image/jpeg" />
+                <img class="set-list__img picture" src="./images/img-box-3.jpg" alt="Людина працює над дизайном сайту" width="370" />
+              </picture>
               <h3 class="set-list__title">Дизайнерські рішення</h3>
             </li>
           </ul>
@@ -167,12 +160,15 @@
           <div class="team-img">
             <ul class="set-img list">
               <li class="set-img__item">
-                <img
-                  class="set-img__picture picture"
-                  src="./images/img-team-1.jpg"
-                  alt="Фото пріцівника компанії"
-                  width="270"
-                />
+                <picture>
+                  <source srcset="./images/img-team-1.jpg 1x, ./images/img-team-1-2x.jpg 2x" type="image/jpeg" 
+                  media="(min-width:1200px)"/>
+                  <source srcset="./images/img-team-tab-1.jpg 1x, ./images/img-team-tab-1-2x.jpg 2x" type="image/jpeg"
+                    media="(min-width:768px)" />
+                    <source srcset="./images/img-team-mob-1.jpg 1x, ./images/img-team-mob-1-2x.jpg 2x" type="image/jpeg"
+                      media="(min-width:480px)" />
+                  <img class="set-img__picture picture" src="./images/img-team-1.jpg" alt="Фото пріцівника компанії" width="270" />
+                </picture>
                 <h3 class="set-img__title">Ігор Дем'яненко</h3>
                 <p class="set-img__text text">Product Designer</p>
                 <ul class="social-list list">
@@ -203,12 +199,15 @@
                 </ul>
               </li>
               <li class="set-img__item">
-                <img
-                  class="set-img__picture picture"
-                  src="./images/img-team-2.jpg"
-                  alt="Фото пріцівника компанії"
-                  width="270"
-                />
+                <picture>
+                  <source srcset="./images/img-team-2.jpg 1x, ./images/img-team-2-2x.jpg 2x" type="image/jpeg"
+                    media="(min-width:1200px)" />
+                  <source srcset="./images/img-team-tab-2.jpg 1x, ./images/img-team-tab-2-2x.jpg 2x" type="image/jpeg"
+                    media="(min-width:768px)" />
+                  <source srcset="./images/img-team-mob-2.jpg 1x, ./images/img-team-mob-2-2x.jpg 2x" type="image/jpeg"
+                    media="(min-width:480px)" />
+                  <img class="set-img__picture picture" src="./images/img-team-2.jpg" alt="Фото пріцівника компанії" width="270" />
+                </picture>
                 <h3 class="set-img__title">Ольга Рєпіна</h3>
                 <p class="set-img__text text">Frontend Developer</p>
                 <ul class="social-list list">
@@ -239,12 +238,15 @@
                 </ul>
               </li>
               <li class="set-img__item">
-                <img
-                  class="set-img__picture picture"
-                  src="./images/img-team-3.jpg"
-                  alt="Фото пріцівника компанії"
-                  width="270"
-                />
+                <picture>
+                  <source srcset="./images/img-team-3.jpg 1x, ./images/img-team-3-2x.jpg 2x" type="image/jpeg"
+                    media="(min-width:1200px)" />
+                  <source srcset="./images/img-team-tab-3.jpg 1x, ./images/img-team-tab-3-2x.jpg 2x" type="image/jpeg"
+                    media="(min-width:768px)" />
+                  <source srcset="./images/img-team-mob-3.jpg 1x, ./images/img-team-mob-3-2x.jpg 2x" type="image/jpeg"
+                    media="(min-width:480px)" />
+                  <img class="set-img__picture picture" src="./images/img-team-3.jpg" alt="Фото пріцівника компанії" width="270" />
+                </picture>
                 <h3 class="set-img__title">Микола Тарасов</h3>
                 <p class="set-img__text text">Marketing</p>
                 <ul class="social-list list">
@@ -275,12 +277,15 @@
                 </ul>
               </li>
               <li class="set-img__item">
-                <img
-                  class="set-img__picture picture"
-                  src="./images/img-team-4.jpg"
-                  alt="Фото пріцівника компанії"
-                  width="270"
-                />
+                <picture>
+                  <source srcset="./images/img-team-4.jpg 1x, ./images/img-team-4-2x.jpg 2x" type="image/jpeg"
+                    media="(min-width:1200px)" />
+                  <source srcset="./images/img-team-tab-4.jpg 1x, ./images/img-team-tab-4-2x.jpg 2x" type="image/jpeg"
+                    media="(min-width:768px)" />
+                  <source srcset="./images/img-team-mob-4.jpg 1x, ./images/img-team-mob-4-2x.jpg 2x" type="image/jpeg"
+                    media="(min-width:480px)" />
+                  <img class="set-img__picture picture" src="./images/img-team-4.jpg" alt="Фото пріцівника компанії" width="270" />
+                </picture>
                 <h3 class="set-img__title">Михайло Єрмаков</h3>
                 <p class="set-img__text text">UI Designer</p>
                 <ul class="social-list list">
