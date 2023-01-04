@@ -117,3 +117,11 @@
 .mob-nav_link {
   @include font(500, 40, 1.18, 0.02);
 }
+
+.mob-nav_tel {
+  @include font(500, 34, 1.18, 0.02);
+}
+.mob-nav_email {
+  @include font(500, 24, 1.17, 0.02);
+}
+
