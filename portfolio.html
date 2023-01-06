@@ -88,12 +88,22 @@
                 <button type="button" class="nav-list__btn">Маркетинг</button>
               </li>
             </ul>
+            
           <div class="portfolio-action">
             <ul class="card-set list">
               <li class="card-set__list">
                 <a class="card-set__item" href="">
                   <div class="card-set__thumb">
-                    <img class="card-set__img" src="./images/img-project-1.jpg" alt="Веб-сайт Технокряк" width="370"/>
+                    <picture>
+                      <source srcset="./images/img-project-1.jpg 1x, ./images/project-1-2x.jpg 2x" type="image/jpeg"
+                        media="(min-width:1200px)" />
+                      <source srcset="./images/project-1-tab-1x 1x, ./images/project-1-tab-2x.jpg 2x" type="image/jpeg"
+                        media="(min-width:768px)" />
+                      <source srcset="./images/project-1-tel-1x.jpg 1x, ./images/project-1-tel-2x.jpg 2x" type="image/jpeg"
+                        media="(min-width:480px)" />
+                      <img class="card-set__img" src="./images/img-project-1.jpg" alt="Веб-сайт Технокряк" width="370" />
+                    </picture>
+                
                     <p class="card-set__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
