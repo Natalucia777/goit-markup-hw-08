@@ -15,7 +15,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="page">
@@ -57,6 +56,14 @@
             </li>
           </ul>
         </div>
+    
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -267,5 +274,48 @@
           </div>
         </div>
     </footer>
+    <div class="menu-container  js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+    
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+      <div class="menu-box">
+        <div class="box-nav">
+          <ul class="mob-nav">
+            <li class="list"><a href="./index.html" class="mob-nav_link link">Студія</a></li>
+            <li class="list"><a href="./portfolio.html" class="mob-nav_link curent link">Портфоліо</a></li>
+            <li class="list"><a href="#" class="mob-nav_link link">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="box-soc">
+          <ul class="mob-nav">
+            <li class="list"><a href="tel:+380961111111" class="mob-nav_tel link">
+                +38 096 111 11 11</a></li>
+            <li class="list"><a href="mailto:info@devstudio.com" class="mob-nav_email link">
+                info@devstudio.com</a></li>
+          </ul>
+        </div>
+        <div class="box-join-mob">
+          <ul class="box-join__nav">
+            <li class="box-join__list list"><a href="" class="mob-nav_soc link">
+                Instagram</a></li>
+            <li class="box-join__list list"><a href="" class="mob-nav_soc link">
+                Twitter</a></li>
+            <li class="box-join__list list"><a href="" class="mob-nav_soc link">
+                Facebook</a></li>
+            <li class="list"><a href="" class="mob-nav_soc link">
+                LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>

@@ -648,6 +648,7 @@ img {
 }
 
 textarea {
+  padding-left: 16px;
   resize: none;
 }
 
@@ -1790,13 +1791,32 @@ button .button-action {
 .portfolio-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-box {
+    align-items: center;
+  }
 }
 
 .nav {
   display: flex;
   flex-direction: row;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  width: 326px;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    margin-bottom: 30px;
+    width: 575px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav {
+    margin-bottom: 50px;
+  }
 }
 
 .nav__action {
@@ -1821,6 +1841,17 @@ button .button-action {
   min-width: 130px;
 }
 
+@media screen and (max-width: 768px) {
+  .nav__action:nth-child(3) {
+    margin-right: 0px;
+  }
+  .nav__action:nth-child(4) {
+    margin-top: 15px;
+  }
+  .nav__action:nth-child(5) {
+    margin-top: 15px;
+  }
+}
 .nav-list__btn {
   background-color: var(--team-action-color);
   color: var(--title-text-color);
@@ -2088,15 +2119,19 @@ button .button-action {
   fill: var(--accent-text-color);
 }
 
+.mob-nav .mob-nav_link.curent {
+  color: var(--accent-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-nav .mob-nav_link.curent:hover, .mob-nav .mob-nav_link.curent:focus {
+  color: var(--title-text-color);
+}
+
 .mob-nav .list {
   padding: 0;
 }
 .mob-nav .list:not(:last-child) {
   margin-bottom: 32px;
-}
-
-.mob-nav_link {
-  padding: 0;
 }
 
 .box-soc {
@@ -2114,17 +2149,19 @@ button .button-action {
   margin: 302px 0 0 0;
 }
 
-.mob-nav_tel {
+.mob-nav .mob-nav_tel {
+  color: var(--accent-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mob-nav_tel:hover, .mob-nav_tel:focus {
-  color: var(--accent-text-color);
+.mob-nav .mob-nav_tel:hover, .mob-nav .mob-nav_tel:focus {
+  color: var(--primmary-text-color);
 }
 
-.mob-nav_email {
+.mob-nav .mob-nav_email {
+  color: var(--primmary-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mob-nav_email:hover, .mob-nav_email:focus {
+.mob-nav .mob-nav_email:hover, .mob-nav .mob-nav_email:focus {
   color: var(--accent-text-color);
 }
 
@@ -2156,9 +2193,13 @@ button .button-action {
 }
 
 .mob-nav_soc {
+  color: var(--accent-text-color);
   padding: 10px 10px 10px 10px;
   margin: 0;
 }
 .mob-nav_soc:nth-child(1) {
   padding: 0 10px 10px 10px;
+}
+.mob-nav_soc:hover, .mob-nav_soc:focus {
+  color: var(--primmary-text-color);
 }/*# sourceMappingURL=main.css.map */

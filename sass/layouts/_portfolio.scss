@@ -2,15 +2,45 @@
 .portfolio-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
+  align-items: flex-start;
+  @media screen and (min-width:768px) {
+      align-items: center;
+    }
+  }
 .nav {
   display: flex;
   flex-direction: row;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  // margin-bottom: 40px;
+  width: 326px;
+  // align-items: flex-start;
+  // justify-content: flex-start;
+  padding: 0;
+  margin: 0 0 40px 0;
+  @media screen and (min-width:768px) {
+      margin-bottom: 30px;
+      width: 575px;
+      // flex-wrap: nowrap;
+    }
+  @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+  }
 }
+
+
 .nav__action {
   margin-right: 8px;
+  // &:nth-child(3) {
+  //     margin-right: 0px;
+  //   }
+  // &:nth-child(4) {
+  //   margin-top: 15px;
+  // }
+  // &:nth-child(5) {
+  //   margin-top: 15px;
+  //   }
+
+
   &:nth-child(5) {
     margin-right: 0;
   }
@@ -30,6 +60,23 @@
     min-width: 130px;
   }
 }
+ @media screen and (max-width: 768px) {
+   .nav__action {
+     &:nth-child(3) {
+       margin-right: 0px;
+     }
+
+     &:nth-child(4) {
+       margin-top: 15px;
+     }
+
+     &:nth-child(5) {
+       margin-top: 15px;
+     }
+
+   }
+ }
+
 .nav-list__btn {
   background-color: var(--team-action-color);
   color: var(--title-text-color);
