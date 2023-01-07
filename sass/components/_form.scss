@@ -70,8 +70,10 @@ textarea {
     background-color: var(--title-text-color);
   }
 }
+
 .coment {
   padding-top: 12px;
+  padding-bottom: 0;
 }
 .icon {
   position: absolute;
@@ -121,9 +123,9 @@ textarea {
       fill: transparent;
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    @media screen and (min-width: 1200px) {
-      margin: 4px 8px 0 12px;
-    }
+  @media screen and (min-width: 1200px) {
+    margin: 4px 8px 0 12px;
+  }
 }
 .polisy-acsept__input {
   &:checked+label>span {
