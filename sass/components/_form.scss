@@ -53,6 +53,7 @@ textarea {
 .form__field {
   display: flex;
   flex-direction: column;
+
   margin-bottom: 10px;
   position: relative;
   &:last-child {
@@ -68,6 +69,9 @@ textarea {
   &>label input {
     background-color: var(--title-text-color);
   }
+}
+.coment {
+  padding-top: 12px;
 }
 .icon {
   position: absolute;

@@ -682,6 +682,10 @@ textarea {
   background-color: var(--title-text-color);
 }
 
+.coment {
+  padding-top: 12px;
+}
+
 .icon {
   position: absolute;
   top: 50%;
