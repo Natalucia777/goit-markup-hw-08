@@ -133,4 +133,6 @@
 .box-join .mob-nav {
   @include font(500, 18, 1.22, 0.02);
 }
-
+.mob-nav_soc {
+  @include font(500, 18, 22px, 0.02);
+}
