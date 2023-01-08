@@ -1821,7 +1821,7 @@ button .button-action {
 }
 @media screen and (min-width: 1200px) {
   .nav {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 }
 
@@ -1896,24 +1896,29 @@ button .button-action {
   display: block;
   height: auto;
 }
+@media screen and (min-width: 1200px) {
+  .portfolio-action {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
+  flex-direction: row;
   list-style: none;
   padding: 0;
+  margin: 0;
   width: 100%;
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .card-set {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -1923,23 +1928,23 @@ button .button-action {
   .card-set {
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-    list-style: none;
     margin: -30px 0 0 -30px;
+    padding: 0;
+    list-style: none;
+    width: 1200px;
   }
 }
 
 .card-set__list {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  list-style: none;
+  flex-wrap: wrap;
   margin: 0 0 30px 0;
   padding: 0;
-  width: 100%;
+  width: auto;
+  height: auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--background-page-color);
@@ -1951,6 +1956,9 @@ button .button-action {
   .card-set__list:nth-child(3n) {
     margin-right: 0;
   }
+  .card-set__list:last-child() {
+    margin-bottom: 0;
+  }
   .card-set__list:hover .card-set__text {
     transform: translateY(0);
   }
@@ -1959,6 +1967,9 @@ button .button-action {
   .card-set__list {
     flex-wrap: wrap;
     width: 354px;
+  }
+  .card-set__list:nth-child(-n+2) {
+    height: 440px;
   }
   .card-set__list:nth-child(2n) {
     margin-right: 0;
@@ -1971,10 +1982,19 @@ button .button-action {
   }
 }
 @media screen and (min-width: 1200px) {
+  .card-set__list {
+    width: 100%;
+  }
+  .card-set__list:nth-child(-n+2) {
+    height: 404px;
+  }
   .card-set > .card-set__list {
     margin-top: 30px;
     margin-left: 30px;
-    width: calc(100/3 - 30px);
+    margin-right: 0;
+    margin-bottom: 0;
+    width: auto;
+    height: auto;
   }
   .card-set__list:nth-child(3n) {
     margin-right: 0;
@@ -1988,14 +2008,14 @@ button .button-action {
 }
 
 .card-set__item {
-  width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
   text-decoration: none;
-  width: 100%;
+  width: auto;
+  height: 100%;
   transition: box-sizing 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-set__item:hover {
@@ -2003,12 +2023,21 @@ button .button-action {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+@media screen and (min-width: 768px) {
+  .card-set__item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .card-set__item {
     justify-content: center;
     align-items: center;
     list-style: none;
-    width: calc(100/3 - 30px);
+    width: 100%;
   }
 }
 
@@ -2042,7 +2071,7 @@ button .button-action {
   .card-set__title {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: auto;
     margin: 0;
     padding: 0;
   }
@@ -2073,12 +2102,12 @@ button .button-action {
 }
 @media screen and (min-width: 768px) {
   .card-set__thumb {
-    width: 354px;
+    width: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .card-set__thumb {
-    width: 370px;
+    width: auto;
   }
 }
 
@@ -2093,7 +2122,7 @@ button .button-action {
 }
 @media screen and (min-width: 768px) {
   .card-set__content {
-    width: 354px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2109,10 +2138,20 @@ button .button-action {
     height: 146px;
   }
 }
-
+@media screen and (min-width: 768px) {
+  .card-set__list:nth-child(2) .card-set__content {
+    height: 146px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .card-set__list:nth-child(1) .card-set__content {
-    height: auto;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-set__list:nth-child(2) .card-set__content {
+    height: 100%;
   }
 }
 
